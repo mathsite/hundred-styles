@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>hundred-styles.css Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="hundred-styles.min.css">
+  <style>
+    body { padding-bottom: 4rem; }
+    section { margin-bottom: 2.5rem; }
+    .demo-header { margin-bottom: 2rem; }
+    .demo-section-title { font-size: 1.3rem; color: #185abc; margin: 2.5rem 0 1.1rem 0; border-bottom: 2px solid #e5e7eb; padding-bottom: .3rem;}
+    .demo-bg-alt { background: #f3f4f6; padding: 0.75em 1em; border-radius: 6px;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="demo-header text-center">
+      <h1 class="rainbow-text">hundred-styles.css Demo</h1>
+      <p class="text-italic">A showcase of 100+ utility and component styles by <b>Mathsite</b></p>
+    </header>
+
+    <section>
+      <div class="demo-section-title">Typography & Text</div>
+      <h1>Heading h1</h1>
+      <h2>Heading h2</h2>
+      <h3>Heading h3</h3>
+      <p>This is a <span class="text-bold">bold</span> and <span class="text-italic">italic</span> paragraph.</p>
+      <p class="text-center">This paragraph is centered.</p>
+      <p class="glow">This paragraph glows!</p>
+      <a href="#">This is a link</a>
+    </section>
+
+    <section>
+      <div class="demo-section-title">Buttons</div>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-outline">Outline</button>
+      <button class="btn btn-primary btn-large">Large</button>
+      <button class="btn btn-primary btn-small">Small</button>
+      <button class="btn" disabled>Disabled</button>
+      <button class="btn btn-primary hover-zoom">Hover Zoom</button>
+      <button class="btn btn-primary hover-shadow">Hover Shadow</button>
+    </section>
+
+    <section>
+      <div class="demo-section-title">Cards & Containers</div>
+      <div class="card shadow-lg">
+        <div class="card-header">Card Header</div>
+        <p>This is a card body. It uses <span class="text-bold">box-shadow</span> and <span class="rounded">rounded corners</span>.</p>
+        <div class="card-footer">Card Footer</div>
+      </div>
+      <div class="card bg-light border">
+        <div class="card-header">Light Card</div>
+        <div class="card-footer">Footer</div>
+      </div>
+      <div class="card bg-dark">
+        <div class="card-header">Dark Card</div>
+        <div class="card-footer">Footer (dark)</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="demo-section-title">Forms</div>
+      <form>
+        <div class="form-group">
+          <label for="input1">Text input</label>
+          <input id="input1" type="text" placeholder="Type here...">
+        </div>
+        <div class="form-group">
+          <label for="input2">Success input</label>
+          <input id="input2" type="text" class="success" placeholder="Looks good!">
+        </div>
+        <div class="form-group">
+          <label for="input3">Error input</label>
+          <input id="input3" type="text" class="error" placeholder="There's an error!">
+        </div>
+        <div class="form-group">
+          <label><input type="checkbox"> Checkbox</label>
+          <label><input type="radio" name="demo-radio"> Radio 1</label>
+          <label><input type="radio" name="demo-radio"> Radio 2</label>
+        </div>
+        <div class="form-group">
+          <label for="textarea1">Textarea</label>
+          <textarea id="textarea1" placeholder="Write something..."></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section>
+      <div class="demo-section-title">Lists & Tables</div>
+      <ul>
+        <li>Unordered list item 1</li>
+        <li>Unordered list item 2</li>
+      </ul>
+      <ol>
+        <li>Ordered list item 1</li>
+        <li>Ordered list item 2</li>
+      </ol>
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th class="text-right">Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mathsite</td>
+            <td class="text-right">100</td>
+          </tr>
+          <tr>
+            <td>Demo User</td>
+            <td class="text-right">90</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <div class="demo-section-title">Images & Media</div>
+      <img src="static/avatar.png" alt="Avatar" class="avatar img-shadow" />
+      <img src="static/kitten.png" alt="Kitten" class="img-circle img-responsive" width="64" />
+      <div class="media demo-bg-alt mt-2">
+        <img src="https://placehold.co/48x48" class="media-img img-circle" alt="icon" width="48">
+        <div class="media-body">
+          <b>Media object</b><br>
+          This is a flexible media layout for avatars, icons, and descriptions.
+        </div>
+      </div>
+      <div class="video-container mt-2">
+<video width="320" height="240" controls>
+  <source src="static/movie.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+      </div>
+    </section>
+
+    <section>
+      <div class="demo-section-title">Animations & Effects</div>
+      <div class="fade-in demo-bg-alt mb-1">I fade in</div>
+      <div class="slide-down demo-bg-alt mb-1">I slide down</div>
+      <div class="pop demo-bg-alt mb-1">I pop in!</div>
+      <div class="transition demo-bg-alt mb-1 hover-zoom cursor-pointer">Hover to zoom</div>
+      <div class="transition demo-bg-alt mb-1 hover-shadow cursor-pointer">Hover for shadow</div>
+    </section>
+
+    <section>
+      <div class="demo-section-title">Flex & Grid</div>
+      <div class="flex gap-2">
+        <div class="card p-0" style="width:100px;">Flex 1</div>
+        <div class="card p-0" style="width:100px;">Flex 2</div>
+        <div class="card p-0" style="width:100px;">Flex 3</div>
+      </div>
+      <div class="grid grid-2 mt-2 gap-4">
+        <div class="card p-0">Grid 1</div>
+        <div class="card p-0">Grid 2</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="demo-section-title">Utilities & Helpers</div>
+      <div class="m-0 p-0 border demo-bg-alt">No margin, no padding</div>
+      <div class="mt-2 pt-4 bg-light d-block w-100">Margin top, padding top, block, full width</div>
+      <div class="mx-auto bg-dark w-100" style="max-width: 200px;">Centered block</div>
+      <span class="cursor-pointer">Pointer on hover</span>
+      <span class="d-none">You shouldn't see this text</span>
+    </section>
+
+    <section>
+      <div class="demo-section-title">Custom & Fun</div>
+      <span class="rainbow-text text-bold text-center" style="display:block;font-size:2em;">🌈 Rainbow Text!</span>
+      <span class="blur">Blurred text</span>
+      <span class="glow">Glowing text</span>
+      <span class="rotate">Rotated</span>
+      <span class="skew">Skewed</span>
+      <span class="shadow-pop">Shadow pop</span>
+      <div class="border-gradient p-0" style="padding:.5em 1em;">Gradient border!</div>
+      <span class="circle"></span>
+      <span class="star">★</span>
+    </section>
+
+    <footer class="text-center mt-2 pt-4">
+      <small>&copy; 2025 Mathsite | Demo for <b>hundred-styles.css</b></small>
+    </footer>
+  </div>
+</body>
+</html>
