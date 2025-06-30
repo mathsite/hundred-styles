@@ -5,12 +5,48 @@
   <title>hundred-styles.css Demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="hundred-styles.min.css">
+  <script src="static/script.js"></script>
   <style>
     body { padding-bottom: 4rem; }
     section { margin-bottom: 2.5rem; }
     .demo-header { margin-bottom: 2rem; }
     .demo-section-title { font-size: 1.3rem; color: #185abc; margin: 2.5rem 0 1.1rem 0; border-bottom: 2px solid #e5e7eb; padding-bottom: .3rem;}
     .demo-bg-alt { background: #f3f4f6; padding: 0.75em 1em; border-radius: 6px;}
+    section { margin-bottom: 3.5rem; } /* more breathing room */
+  .use-styles-btn {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 1000;
+  }
+  .modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 0 24px rgba(0,0,0,0.4);
+  }
+  .modal-content pre {
+    background: #f3f3f3;
+    padding: .75rem;
+    overflow-x: auto;
+    text-align: left;
+  }
+  .modal-close {
+    margin-top: 1rem;
+  }
   </style>
 </head>
 <body>
@@ -187,5 +223,19 @@ Your browser does not support the video tag.
       <small>&copy; 2025 Mathsite | Demo for <b>hundred-styles.css</b></small>
     </footer>
   </div>
+  <button class="btn btn-primary use-styles-btn shadow-pop" onclick="openModal()">Use Hundred Styles</button>
+
+<!-- Modal structure -->
+<div id="stylesModal" class="modal-bg fade-in">
+  <div class="modal-content">
+    <h2>Use hundred-styles.css</h2>
+    <p>Copy this into your HTML head:</p>
+    <pre id="cssLinkCode">&lt;link rel="stylesheet" href="https://mathsite.github.io/hundred-styles/hundred-styles.min.css"&gt;</pre>
+    <button class="btn btn-success mt-1" onclick="copyLink()">Copy to Clipboard</button>
+    <br>
+    <button class="btn btn-danger modal-close" onclick="closeModal()">Close</button>
+  </div>
+</div>
+
 </body>
 </html>
