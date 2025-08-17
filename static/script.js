@@ -10,3 +10,4 @@
       alert("Link copied to clipboard!");
     });
   }
+// Non related to the hundred styles main code
