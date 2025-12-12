@@ -50,7 +50,7 @@ Open [`hundred-styles-demo.html`](index.html) for a live preview, or see a sampl
 
 ## 🧑‍💻 Author
 
-**Matthew Sited** (aka [Mathsite](https://mathsite.github.io/me))  
+**Matthew Sited** (aka [Matthew Sited](https://mathsite.github.io/me))  
 CSS enthusiast and web design student.
 
 Fun fact: I love making easy, modern, and creative CSS tools!
