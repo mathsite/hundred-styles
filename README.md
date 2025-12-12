@@ -1,6 +1,6 @@
 # hundred-styles.css
 
-A demo and showcase of **100+ modern CSS utility and component styles** by [Mathsite](https://mathsite.github.io/me)!
+A demo and showcase of **100+ modern CSS utility and component styles** by [Matthew Sited](https://mathsite.github.io/me)!
 
 This repository contains:
 - [`hundred-styles.min.css`](hundred-styles.min.css) – a minified CSS file with 100 distinct styles, including utilities, buttons, cards, forms, animations, grids, and more.
